@@ -1,0 +1,35 @@
+.squad-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #e0e0e0; /* Background for context */
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.player-slot {
+    width: 80px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4caf50;
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.position-F, .position-M, .position-D, .position-G {
+    color: #fff;
+    background-color: #4caf50;
+}
+
+.position-G {
+    grid-column: 2 / span 2;
+}

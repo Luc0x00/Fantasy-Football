@@ -1,0 +1,120 @@
+/* Player card container */
+.player-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Reduce the min-width to 200px to make cards smaller */
+    gap: 20px; /* Adjust the gap between cards */
+    margin-top: 20px;
+}
+
+/* Individual player card style */
+.player-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    border: 1px solid #e0e0e0; /* Light border for card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px; /* Reduce the fixed height of the card to make it smaller */
+}
+
+/* Card hover effect */
+.player-card:hover {
+    transform: translateY(-10px); /* Lift the card */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Player image styling */
+.player-image-container {
+    width: 100px; /* Reduce the size of the image */
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #4caf50; /* Border around the image */
+    margin-bottom: 15px;
+}
+
+.player-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Player information container */
+.player-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Player name styling */
+.player-name {
+    font-size: 18px; /* Slightly smaller font size */
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    transition: color 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.player-name:hover {
+    color: #4caf50; /* Change color on hover */
+}
+
+/* Player position styling */
+.player-position {
+    font-size: 12px; /* Slightly smaller font size */
+    color: #555;
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Player club styling */
+.player-club {
+    font-size: 12px; /* Slightly smaller font size */
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Player price styling */
+.player-price {
+    font-size: 14px; /* Slightly smaller font size */
+    font-weight: 700;
+    color: #4caf50;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    background-color: #e8f5e9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Styling the buttons for pagination */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
